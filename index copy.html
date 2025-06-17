@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofers - Roofing Free Bootstrap5 HTML Website Template</title>
+
+    <!--vendor css ================================================== -->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!--Bootstrap ================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+    <!-- Style Sheet ================================================== -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- Google Fonts ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,300&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- script ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+
+
+    <nav class="navbar navbar-expand-lg bg-white navbar-light container-fluid py-3 position-fixed ">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/main-logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav align-items-center justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase active px-3" aria-current="page"
+                            href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase px-3" href="servicio.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase px-3" href="login.html">medidor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase px-3" href="login.html">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase px-3" href="login.html">blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase px-3" href="login.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+    <a class="nav-link text-uppercase px-3" href="login.html">Login</a>
+</li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-uppercase dropdown-toggle text-center" data-bs-toggle="dropdown" href="#"
+                            role="button" aria-expanded="false">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item text-uppercase fw-bold text-primary">Módulos Disponibles</li>
+                            <li><a href="#" class="dropdown-item text-uppercase">Módulo de Facturación y Pagos</a></li>
+                            <li><a href="#" class="dropdown-item text-uppercase">Soporte Técnico</a></li>
+                            <li><a href="#" class="dropdown-item text-uppercase">Auditoría</a></li>
+                            <li><a href="#" class="dropdown-item text-uppercase">Inventario</a></li>
+                            <li><a href="#" class="dropdown-item text-uppercase">Geolocalización y Zonas</a></li>
+                            <li><a href="#" class="dropdown-item text-uppercase">Reportes y Estadísticas</a></li>
+                            <li><a href="#" class="dropdown-item text-uppercase">Notificaciones Automáticas</a></li>
+                            <li><a href="#" class="dropdown-item text-uppercase">Portal Web Responsivo</a></li>
+                            <li><a href="#" class="dropdown-item text-uppercase">Documentación y Mantenimiento</a></li>
+                        </ul>
+                    </li>
+                  
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+                    <div class="d-flex mt-5 mt-lg-0 ps-lg-3 align-items-center justify-content-center ">
+                        <ul class="navbar-nav justify-content-end align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link px-3 phone-no" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M18.3274 22.5001C17.4124 22.5001 16.1271 22.1691 14.2024 21.0938C11.862 19.7813 10.0516 18.5696 7.72383 16.2479C5.47946 14.0049 4.38727 12.5527 2.85868 9.77115C1.1318 6.63052 1.42618 4.98427 1.75524 4.28068C2.14712 3.43974 2.72555 2.93677 3.47321 2.43755C3.89787 2.15932 4.34727 1.92081 4.81571 1.72505C4.86258 1.7049 4.90618 1.68568 4.94508 1.66833C5.17712 1.5638 5.52868 1.40583 5.97399 1.57458C6.27118 1.68615 6.53649 1.91443 6.9518 2.32458C7.80352 3.16458 8.96743 5.03537 9.3968 5.95412C9.68508 6.57333 9.87587 6.98208 9.87633 7.44052C9.87633 7.97724 9.60633 8.39115 9.27868 8.83787C9.21727 8.92177 9.15633 9.00193 9.09727 9.07974C8.74055 9.54849 8.66227 9.68396 8.71383 9.92583C8.81837 10.4119 9.5979 11.859 10.879 13.1372C12.1601 14.4155 13.5654 15.1458 14.0534 15.2499C14.3056 15.3038 14.4438 15.2222 14.9276 14.8529C14.997 14.7999 15.0682 14.7451 15.1427 14.6902C15.6424 14.3185 16.0371 14.0555 16.5612 14.0555H16.564C17.0201 14.0555 17.4106 14.2533 18.0574 14.5796C18.9012 15.0052 20.8282 16.1541 21.6734 17.0068C22.0845 17.4211 22.3137 17.6855 22.4257 17.9822C22.5945 18.429 22.4356 18.7791 22.332 19.0135C22.3146 19.0524 22.2954 19.0951 22.2752 19.1424C22.0779 19.61 21.838 20.0585 21.5585 20.4821C21.0602 21.2274 20.5554 21.8044 19.7126 22.1968C19.2798 22.4015 18.8062 22.5052 18.3274 22.5001Z"
+                                            fill="#313131" />
+                                    </svg>
+                                    (+487) 384 9452
+                                </a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-primary ms-md-3"> Get in touch </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="position-relative overflow-hidden py-4" style="background: url(images/banner-img.png);">
+        <!-- <div class="pattern-overlay pattern-right position-absolute">
+            <img src="images/pattern-hero.png" alt="pattern">
+        </div> -->
+        <div class="container py-5 mt-5">
+            <div class="row align-items-center py-5 mt-5">
+                <div class="col-md-6 mb-5 mb-md-0">
+                    <h6 class="text-white">SOLUCIONES INTEGRALES DE TECNOLOGÍA</h6>
+                    <h2 class="text-white fw-bold display-2">Grupo Intercom: Impulsamos tu conectividad</h2>
+                    <p class="text-white"> Ofrecemos servicios de telecomunicaciones, mantenimiento de redes, soporte técnico y consultoría empresarial. Nuestro equipo de expertos garantiza un servicio confiable y eficiente para satisfacer las necesidades de tu empresa.</p>
+                    <ul class="list-unstyled">
+                        <li class="text-white fw-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
+                                fill="none">
+                                <g clip-path="url(#clip0_1_359)">
+                                    <path
+                                        d="M11.5 0.359375C5.34719 0.359375 0.359375 5.34719 0.359375 11.5C0.359375 17.6528 5.34719 22.6406 11.5 22.6406C17.6528 22.6406 22.6406 17.6528 22.6406 11.5C22.6406 5.34719 17.6528 0.359375 11.5 0.359375ZM11.5 2.51562C16.4653 2.51562 20.4844 6.53393 20.4844 11.5C20.4844 16.4653 16.4661 20.4844 11.5 20.4844C6.5347 20.4844 2.51562 16.4661 2.51562 11.5C2.51562 6.5347 6.53393 2.51562 11.5 2.51562ZM17.7982 8.36746L16.7859 7.34693C16.5762 7.13557 16.2349 7.13418 16.0235 7.34387L9.67375 13.6426L6.98778 10.9349C6.77813 10.7235 6.43681 10.7221 6.22545 10.9318L5.20487 11.9441C4.99352 12.1538 4.99212 12.4951 5.20182 12.7065L9.27987 16.8176C9.48952 17.0289 9.83084 17.0303 10.0422 16.8206L17.7952 9.12983C18.0065 8.92014 18.0079 8.57882 17.7982 8.36746Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_359">
+                                        <rect width="23" height="23" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                              Servicios de instalación y mantenimiento de redes
+                        </li>
+                        <li class="text-white fw-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
+                                fill="none">
+                                <g clip-path="url(#clip0_1_359)">
+                                    <path
+                                        d="M11.5 0.359375C5.34719 0.359375 0.359375 5.34719 0.359375 11.5C0.359375 17.6528 5.34719 22.6406 11.5 22.6406C17.6528 22.6406 22.6406 17.6528 22.6406 11.5C22.6406 5.34719 17.6528 0.359375 11.5 0.359375ZM11.5 2.51562C16.4653 2.51562 20.4844 6.53393 20.4844 11.5C20.4844 16.4653 16.4661 20.4844 11.5 20.4844C6.5347 20.4844 2.51562 16.4661 2.51562 11.5C2.51562 6.5347 6.53393 2.51562 11.5 2.51562ZM17.7982 8.36746L16.7859 7.34693C16.5762 7.13557 16.2349 7.13418 16.0235 7.34387L9.67375 13.6426L6.98778 10.9349C6.77813 10.7235 6.43681 10.7221 6.22545 10.9318L5.20487 11.9441C4.99352 12.1538 4.99212 12.4951 5.20182 12.7065L9.27987 16.8176C9.48952 17.0289 9.83084 17.0303 10.0422 16.8206L17.7952 9.12983C18.0065 8.92014 18.0079 8.57882 17.7982 8.36746Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_359">
+                                        <rect width="23" height="23" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                             Soporte técnico especializado y confiable
+                        </li>
+                        <li class="text-white fw-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
+                                fill="none">
+                                <g clip-path="url(#clip0_1_359)">
+                                    <path
+                                        d="M11.5 0.359375C5.34719 0.359375 0.359375 5.34719 0.359375 11.5C0.359375 17.6528 5.34719 22.6406 11.5 22.6406C17.6528 22.6406 22.6406 17.6528 22.6406 11.5C22.6406 5.34719 17.6528 0.359375 11.5 0.359375ZM11.5 2.51562C16.4653 2.51562 20.4844 6.53393 20.4844 11.5C20.4844 16.4653 16.4661 20.4844 11.5 20.4844C6.5347 20.4844 2.51562 16.4661 2.51562 11.5C2.51562 6.5347 6.53393 2.51562 11.5 2.51562ZM17.7982 8.36746L16.7859 7.34693C16.5762 7.13557 16.2349 7.13418 16.0235 7.34387L9.67375 13.6426L6.98778 10.9349C6.77813 10.7235 6.43681 10.7221 6.22545 10.9318L5.20487 11.9441C4.99352 12.1538 4.99212 12.4951 5.20182 12.7065L9.27987 16.8176C9.48952 17.0289 9.83084 17.0303 10.0422 16.8206L17.7952 9.12983C18.0065 8.92014 18.0079 8.57882 17.7982 8.36746Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_359">
+                                        <rect width="23" height="23" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            Transparencia y confiabilidad en cada proyecto
+                        </li>
+                    </ul>
+                </div>
+                <div class=" col-md-5 offset-md-1">
+                    
+                          <form class="hero-form p-5" action="https://formspree.io/f/mwppwzdv" method="POST">
+                             <h3>Contáctanos</h3>
+
+                          <div class="mb-4">
+            <label for="nombre" class="form-label mb-0">Nombre</label>
+            <input type="text" class="form-control border-0" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="apellido" class="form-label mb-0">Apellido</label>
+            <input type="text" class="form-control border-0" id="apellido" name="apellido" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="correo" class="form-label mb-0">Correo electrónico</label>
+            <input type="email" class="form-control border-0" id="correo" name="correo" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="telefono" class="form-label mb-0">Teléfono</label>
+            <input type="tel" class="form-control border-0" id="telefono" name="telefono">
+        </div>
+
+        <div class="mb-3">
+            <label for="mensaje" class="form-label mb-0">Mensaje</label>
+            <textarea class="form-control border-0" id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+
+        <div class="d-grid">
+            <button type="submit" class="btn btn-primary btn-lg">Enviar mensaje</button>
+        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+-------------------------------------------
+    <section id="partners">
+        <div class="container my-5 py-5">
+            <h6 class="fw-bold text-capitalize fs-5 my-5">Our trusted partners</h6>
+            <div class="row">
+                <div class="logo-content d-flex flex-wrap justify-content-between">
+                    <a href="#" class="mb-5 mx-2">
+                        <img src="images/logo1.png" alt="logo" class="logo-image img-fluid">
+                    </a>
+                    <a href="#" class="mb-5 mx-2">
+                        <img src="images/logo2.png" alt="logo" class="logo-image img-fluid">
+                    </a>
+                    <a href="#" class="mb-5 mx-2">
+                        <img src="images/logo3.png" alt="logo" class="logo-image img-fluid">
+                    </a>
+                    <a href="#" class="mb-5 mx-2">
+                        <img src="images/logo4.png" alt="logo" class="logo-image img-fluid">
+                    </a>
+                    <a href="#" class="mb-5 mx-2">
+                        <img src="images/logo5.png" alt="logo" class="logo-image img-fluid">
+                    </a>
+                    <a href="#" class="mb-5 mx-2">
+                        <img src="images/logo6.png" alt="logo" class="logo-image img-fluid">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonial" class=" position-relative  py-5">
+
+        <div class="testimonial-pattern-overlay pattern-left position-absolute">
+            <img src="images/pattern-testimonial.png" alt="pattern">
+        </div>
+        <div class="testimonial-pattern-overlay pattern-right position-absolute">
+            <img src="images/right-pattern-testimonial.png" alt="pattern">
+        </div>
+
+        <div class="container py-5">
+            <h6 class="text-white">Homeowners reviews</h6>
+            <h2 class="text-white fw-bold display-4 mb-4">Our happy customers</h2>
+
+            <div class="swiper testimonial-swiper mb-4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide testimonial-content p-5">
+                        <p>“A pellen tesque pretium feugiat vel mobi sagittis lorem habi tasse cursus ipsum quis nec
+                            eget facilisis. Quis nibh ut bindum nisl quis placerat proin tortor mattis.”</p>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/customer.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="col-md-9">
+                                <h5>Kelly Garcia</h5>
+                                <div class="d-flex">
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial-content p-5">
+                        <p>“A pellen tesque pretium feugiat vel mobi sagittis lorem habi tasse cursus ipsum quis nec
+                            eget facilisis. Quis nibh ut bindum nisl quis placerat proin tortor mattis.”</p>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/customer.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="col-md-9">
+                                <h5>Kelly Garcia</h5>
+                                <div class="d-flex">
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial-content p-5">
+                        <p>“A pellen tesque pretium feugiat vel mobi sagittis lorem habi tasse cursus ipsum quis nec
+                            eget facilisis. Quis nibh ut bindum nisl quis placerat proin tortor mattis.”</p>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/customer.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="col-md-9">
+                                <h5>Kelly Garcia</h5>
+                                <div class="d-flex">
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial-content p-5">
+                        <p>“A pellen tesque pretium feugiat vel mobi sagittis lorem habi tasse cursus ipsum quis nec
+                            eget facilisis. Quis nibh ut bindum nisl quis placerat proin tortor mattis.”</p>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/customer.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="col-md-9">
+                                <h5>Kelly Garcia</h5>
+                                <div class="d-flex">
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial-content p-5">
+                        <p>“A pellen tesque pretium feugiat vel mobi sagittis lorem habi tasse cursus ipsum quis nec
+                            eget facilisis. Quis nibh ut bindum nisl quis placerat proin tortor mattis.”</p>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/customer.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="col-md-9">
+                                <h5>Kelly Garcia</h5>
+                                <div class="d-flex">
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="swiper-pagination mb-5"></div>
+        </div>
+
+    </section>
+-----------------------------------------------------------
+    <section id="services" class="my-5 pt-5">
+    <div class="container pt-5">
+        <h6 class="">Nuestros Servicios</h6>
+        <h2 class="fw-bold display-4 mb-4">¿Qué ofrecemos?</h2>
+        <div class="row">
+            <!-- Plan de Internet Hogar -->
+            <div class="mt-4 col-md-6 col-lg-3">
+                <div class="services-components text-center py-5 px-3">
+                    <iconify-icon class="services-icon my-2" icon="mdi:router-wireless"></iconify-icon>
+                    <h5 class="services-heading mb-3">Internet para el hogar</h5>
+                    <p>Planes de alta velocidad para streaming, clases online y redes sociales sin interrupciones.</p>
+                    <a href="services-single.html" class="btn btn-primary service-btn mt-3">ver más</a>
+                </div>
+            </div>
+
+            <!-- Soporte técnico 24/7 -->
+            <div class="mt-4 col-md-6 col-lg-3">
+                <div class="services-components text-center py-5 px-3">
+                    <iconify-icon class="services-icon my-2" icon="mdi:headset"></iconify-icon>
+                    <h5 class="services-heading mb-3">Soporte técnico 24/7</h5>
+                    <p>Asistencia rápida y confiable para solucionar cualquier problema de conexión o equipos.</p>
+                    <a href="services-single.html" class="btn btn-primary service-btn mt-3">ver más</a>
+                </div>
+            </div>
+
+            <!-- Servicio de televisión digital -->
+            <div class="mt-4 col-md-6 col-lg-3">
+                <div class="services-components text-center py-5 px-3">
+                    <iconify-icon class="services-icon my-2" icon="mdi:television-classic"></iconify-icon>
+                    <h5 class="services-heading mb-3">TV por suscripción</h5>
+                    <p>Acceso a canales HD, deportes, noticias y entretenimiento desde cualquier dispositivo.</p>
+                    <a href="services-single.html" class="btn btn-primary service-btn mt-3">ver más</a>
+                </div>
+            </div>
+
+            <!-- Internet empresarial dedicado -->
+            <div class="mt-4 col-md-6 col-lg-3">
+                <div class="services-components text-center py-5 px-3">
+                    <iconify-icon class="services-icon my-2" icon="mdi:office-building-marker"></iconify-icon>
+                    <h5 class="services-heading mb-3">Internet empresarial</h5>
+                    <p>Conexión dedicada para negocios, con alta estabilidad, velocidad y SLA garantizado.</p>
+                    <a href="services-single.html" class="btn btn-primary service-btn mt-3">ver más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+------------------------------------------
+<section id="projects">
+    <div class="container-fluid my-5 pt-5 p-0">
+        <h6 class="text-center text-white mt-5">Nuestros trabajos</h6>
+        <h2 class="text-center text-white fw-bold display-4 mb-5">Proyectos recientes</h2>
+
+        <div class="mb-4">
+            <p class="text-center">
+                <button class="filter-button px-3 me-2 mb-3 active" data-filter="*">Todos</button>
+                <button class="filter-button px-3 me-2 mb-3" data-filter=".fibra">Fibra Óptica</button>
+                <button class="filter-button px-3 me-2 mb-3" data-filter=".wifi">Cobertura WiFi</button>
+                <button class="filter-button px-3 me-2 mb-3" data-filter=".tv">TV Digital</button>
+                <button class="filter-button px-3 me-2 mb-3" data-filter=".empresa">Clientes Corporativos</button>
+            </p>
+        </div>
+
+        <div class="isotope-container">
+            <div class="col-md-2 item fibra">
+                <a href="#"><img src="images/proyecto-fibra1.jpg" alt="Fibra óptica" class="img-fluid"></a>
+                <div class="description text-center px-3 py-5">
+                    <h6 class="project-date my-3 pt-3 fs-6">Mar 15, 2024</h6>
+                    <h3 class="project-heading mb-3">Instalación en Urbanización La Pradera</h3>
+                    <a href="project-single.html" class="btn btn-primary mt-3">Ver proyecto</a>
+                </div>
+            </div>
+
+            <div class="col-md-2 item wifi">
+                <a href="#"><img src="images/proyecto-wifi2.jpg" alt="Zona WiFi" class="img-fluid"></a>
+                <div class="description text-center px-3 py-5">
+                    <h6 class="project-date my-3 pt-3 fs-6">Abr 2, 2024</h6>
+                    <h3 class="project-heading mb-3">Red WiFi pública en parque central</h3>
+                    <a href="project-single-wifi2.html" class="btn btn-primary mt-3">Ver proyecto</a>
+                </div>
+            </div>
+
+            <div class="col-md-2 item tv">
+                <a href="#"><img src="images/proyecto-tv3.jpg" alt="TV Digital" class="img-fluid"></a>
+                <div class="description text-center px-3 py-5">
+                    <h6 class="project-date my-3 pt-3 fs-6">Abr 28, 2024</h6>
+                    <h3 class="project-heading mb-3">Instalación de decodificadores HD</h3>
+                    <a href="project-single.html" class="btn btn-primary mt-3">Ver proyecto</a>
+                </div>
+            </div>
+
+            <div class="col-md-2 item empresa">
+                <a href="#"><img src="images/proyecto-empresa4.jpg" alt="Internet Empresa" class="img-fluid"></a>
+                <div class="description text-center px-3 py-5">
+                    <h6 class="project-date my-3 pt-3 fs-6">May 10, 2024</h6>
+                    <h3 class="project-heading mb-3">Red dedicada para hotel turístico</h3>
+                    <a href="project-single-empresa4.html" class="btn btn-primary mt-3">Ver proyecto</a>
+                </div>
+            </div>
+
+            <div class="col-md-2 item fibra">
+                <a href="#"><img src="images/proyecto-fibra5.jpg" alt="Fibra barrio" class="img-fluid"></a>
+                <div class="description text-center px-3 py-5">
+                    <h6 class="project-date my-3 pt-3 fs-6">May 24, 2024</h6>
+                    <h3 class="project-heading mb-3">Fibra óptica en zona rural</h3>
+                    <a href="project-single-fibra5.html" class="btn btn-primary mt-3">Ver proyecto</a>
+                </div>
+            </div>
+
+            <div class="col-md-2 item wifi">
+                <a href="#"><img src="images/proyecto-wifi6.jpg" alt="Router mesh" class="img-fluid"></a>
+                <div class="description text-center px-3 py-5">
+                    <h6 class="project-date my-3 pt-3 fs-6">Jun 3, 2024</h6>
+                    <h3 class="project-heading mb-3">Cobertura con routers mesh</h3>
+                    <a href="project-single.html-wifi6" class="btn btn-primary mt-3">Ver proyecto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+---------------------
+   <section id="process">
+    <div class="container my-5 py-5">
+        <div class="row process-components my-5">
+            <div class="d-flex flex-wrap justify-content-between">
+
+                <div class="col text-center px-4 my-5">
+                    <iconify-icon class="process-icon mb-2" icon="mdi:phone-outline"></iconify-icon>
+                    <h5 class="process-heading">Contáctanos</h5>
+                    <p class="small">Llámanos o llena el formulario para solicitar tu servicio de Internet.</p>
+                </div>
+
+                <div class="col text-center px-4 my-5">
+                    <iconify-icon class="process-icon mb-2" icon="mdi:forum"></iconify-icon>
+                    <h5 class="process-heading">Asesoramiento</h5>
+                    <p class="small">Nuestro equipo evaluará tus necesidades y te recomendará el mejor plan.</p>
+                </div>
+
+                <div class="col text-center px-4 my-5">
+                    <iconify-icon class="process-icon mb-2" icon="mdi:archive-search-outline"></iconify-icon>
+                    <h5 class="process-heading">Visita técnica</h5>
+                    <p class="small">Un técnico visitará tu domicilio para validar cobertura e infraestructura.</p>
+                </div>
+
+                <div class="col text-center px-4 my-5">
+                    <iconify-icon class="process-icon mb-2" icon="mdi:car-lifted-pickup"></iconify-icon>
+                    <h5 class="process-heading">Instalación</h5>
+                    <p class="small">Procedemos a instalar el equipo y activar tu conexión.</p>
+                </div>
+
+                <div class="col text-center px-4 my-5">
+                    <iconify-icon class="process-icon mb-2" icon="mdi:shield-home-outline"></iconify-icon>
+                    <h5 class="process-heading">Conexión activa</h5>
+                    <p class="small">Tu servicio queda listo, seguro y funcionando al 100%.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+------------------------------
+
+    <section id="faq">
+
+    <div class="container my-5 pb-5 ">
+        <h6 class="text-center">Preguntas frecuentes</h6>
+        <h2 class="text-center fw-bold display-4 mb-5">Tenemos respuestas</h2>
+
+        <div class="accordion col-md-8 offset-md-2" id="accordionPanelsStayOpenExample">
+
+            <div class="accordion-item mt-3">
+                <h5 class="accordion-header border-0" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        ¿Ofrecen garantía en el servicio de Internet?
+                    </button>
+                </h5>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <p>Sí, garantizamos la calidad y estabilidad de nuestra conexión. En caso de problemas técnicos,
+                           nuestro soporte técnico está disponible para ayudarte a resolverlos rápidamente.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item mt-3">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        ¿Qué planes de velocidad ofrecen y cuáles son sus precios?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <p>Contamos con planes que van desde 10 Mbps hasta 500 Mbps. Los precios varían según la velocidad y
+                           el tipo de contrato. Puedes consultar nuestros planes en la sección de tarifas o contactarnos para una cotización personalizada.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item mt-3">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        ¿Qué debo hacer si mi conexión es lenta o se cae frecuentemente?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <p>En caso de problemas con la conexión, te recomendamos reiniciar el módem/router. Si el problema persiste,
+                           comunícate con nuestro soporte técnico para realizar un diagnóstico y ayudarte a resolverlo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item mt-3">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFour">
+                        ¿Cuánto tiempo tarda la instalación del servicio?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFour">
+                    <div class="accordion-body">
+                        <p>La instalación normalmente se realiza en 1 a 3 días hábiles después de la confirmación del pedido,
+                           dependiendo de la disponibilidad y ubicación. Nuestro equipo técnico coordinará contigo para agendar la cita.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+---------------------------
+
+    <section id="blog" class="my-5 ">
+    <div class="container py-5">
+        <div class="row align-items-center ">
+            <div class="col-md-6 col-lg-3">
+                <div class="mb-3">
+                    <h6 class="">Nuestros Artículos</h6>
+                    <h2 class="fw-bold display-4 mb-3">Últimos blogs</h2>
+                    <a href="blog.html" class="btn btn-primary mb-5 mb-md-0">Leer Artículos</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="mb-3">
+                    <a href="#"><img src="images/blog1.jpg" alt="imagen" class="img-fluid"></a>
+                    <h6 class="my-3">Publicado por: Equipo intercom</h6>
+                    <a href="#" class="text-decoration-none">
+                        <h5 class="mb-3">Cómo mejorar la velocidad de tu Internet en casa</h5>
+                    </a>
+                    <p>Descubre consejos fáciles para aumentar el rendimiento de tu conexión para streaming, juegos y más.</p>
+                    <a href="blog-single1.html" class="btn btn-primary mt-3 mb-5">Leer Más</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="mb-3">
+                    <a href="#"><img src="images/blog2.jpg" alt="imagen" class="img-fluid"></a>
+                    <h6 class="my-3">Publicado por: Equipo intercom</h6>
+                    <a href="#" class="text-decoration-none">
+                        <h5 class="mb-3">Cómo elegir el mejor plan de Internet para ti</h5>
+                    </a>
+                    <p>Aprende a seleccionar el paquete ideal según tu uso, presupuesto y velocidad necesaria.</p>
+                    <a href="blog-single2.html" class="btn btn-primary mt-3 mb-5">Leer Más</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="mb-3">
+                    <a href="#"><img src="images/blog3.jpg" alt="imagen" class="img-fluid"></a>
+                    <h6 class="my-3">Publicado por: Equipo intercom</h6>
+                    <a href="#" class="text-decoration-none">
+                        <h5 class="mb-3">Fibra óptica vs Internet por cable: ¿cuál elegir?</h5>
+                    </a>
+                    <p>Conoce las ventajas y desventajas de cada tecnología para decidir cuál es mejor para ti.</p>
+                    <a href="blog-single3.html" class="btn btn-primary mt-3 mb-5">Leer Más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+-----------------------
+
+    <section id="cta" class="position-relative my-5">
+    <div class="cta-pattern-overlay pattern-left position-absolute top-50 start-0 translate-middle-y">
+        <img src="images/cta-pattern.png" alt="patrón decorativo">
+    </div>
+    <div class="container my-5 py-5">
+        <div class="row align-items-center my-5">
+            <div class="col-md-6 offset-md-2">
+                <h6 class="text-white">Conéctate hoy</h6>
+                <h2 class="text-white fw-bold display-4">Obtén el mejor Internet para tu hogar o negocio</h2>
+            </div>
+            <div class="col-md-2">
+                <a href="contact.html" class="btn btn-primary cta-button">Contáctanos</a>
+            </div>
+        </div>
+    </div>
+</section>
+----------------------------------
+
+    <section id="footer">
+    <div class="container footer-container mt-5 pt-3">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 my-5 py-5 ">
+
+            <div class=" col-md-4 mt-5 mt-md-0 ">
+                <img src="images/main-logo.png" alt="logo" class="my-3">
+                <p>Proveemos Internet rápido y confiable para hogares y negocios. Conectamos lo que más importa.</p>
+                <div class="d-flex align-items-center ">
+                    <a href="#" target="_blank"><iconify-icon class="social-link-icon active pe-4" icon="mdi:facebook"></iconify-icon></a>
+                    <a href="#" target="_blank"><iconify-icon class="social-link-icon pe-4" icon="mdi:twitter"></iconify-icon></a>
+                    <a href="#" target="_blank"><iconify-icon class="social-link-icon pe-4" icon="mdi:instagram"></iconify-icon></a>
+                    <a href="#" target="_blank"><iconify-icon class="social-link-icon pe-4" icon="mdi:linkedin"></iconify-icon></a>
+                    <a href="#" target="_blank"><iconify-icon class="social-link-icon pe-4" icon="mdi:youtube"></iconify-icon></a>
+                </div>
+            </div>
+
+            <div class="col-md-2 offset-md-1">
+                <h5 class="py-3">Nuestros servicios</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0">Internet residencial</a></li>
+                    <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0">Internet para empresas</a></li>
+                    <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0">Instalación y configuración</a></li>
+                    <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0">Soporte técnico 24/7</a></li>
+                    <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0">Planes de fibra óptica</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2">
+                <h5 class="py-3">Enlaces rápidos</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0">Nuestras ubicaciones</a></li>
+                    <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0">Sobre nosotros</a></li>
+                    <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0">Galería</a></li>
+                    <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0">Política de privacidad</a></li>
+                    <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0">Contáctanos</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h5 class="py-3">Información de contacto</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item d-flex mb-3">
+                        <iconify-icon class="contact-icon pe-3" icon="ion:location"></iconify-icon>
+                        <a href="#" class="nav-link p-0">Av. Central 123, Ciudad, País</a>
+                    </li>
+                    <li class="nav-item d-flex mb-3">
+                        <iconify-icon class="contact-icon pe-3" icon="ion:call"></iconify-icon>
+                        <a href="tel:+1234567890" class="nav-link p-0">0929945724</a>
+                    </li>
+                    <li class="nav-item d-flex mb-3">
+                        <iconify-icon class="contact-icon pe-3" icon="ion:mail"></iconify-icon>
+                        <a href="mailto:soporte@tuinternet.com" class="nav-link p-0">intercomt.com</a>
+                    </li>
+                </ul>
+            </div>
+
+        </footer>
+    </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top"></footer>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 pt-4">
+            <div class="col-md-6 d-flex align-items-center">
+                <p>© 2025 intercom - Todos los derechos reservados</p>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-end">
+                <p>© 2025 Sitio web desarrollado por: <a href="" class="website-link" target="_blank"><b><u>Grupo intercom</u></b></a></p>
+            </div>
+        </footer>
+    </div>
+</section>
+-------------------------------------------------
+
+    <!-- script ================================================== -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
+
+</body>
+
+</html>

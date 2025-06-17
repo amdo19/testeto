@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Contacto | Mi Empresa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Vendor & Bootstrap CSS -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tu Estilo Personalizado -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Botón flotante WhatsApp */
+        #whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+        #whatsapp-btn:hover {
+            background-color: #1ebe5d;
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Animación fade-in */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/main-logo.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" id="offcanvasNavbar" tabindex="-1">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menú</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicio.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="medidor.html">Medidor</a></li>
+                        <a class="nav-link text-uppercase px-3" href="index.html#projects">projects</a>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+<br>
+<br>
+<br>
+
+    <!-- HEADER -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Contáctanos</h1>
+            <p class="lead">Estamos aquí para ayudarte con tu conexión a Internet</p>
+        </div>
+    </header>
+
+    <!-- CONTACTO -->
+    <section class="container my-5">
+        <div class="row">
+            <!-- Formulario -->
+            <div class="col-md-6 fade-in">
+                <h3 class="mb-4">Envíanos un mensaje</h3>
+                <form id="contactForm" class="hero-form p-4 bg-light rounded shadow" action="https://formspree.io/f/mwppwzdv" method="POST" novalidate>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required />
+                        <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" name="apellido" required />
+                        <div class="invalid-feedback">Por favor ingresa tu apellido.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correo" name="correo" required />
+                        <div class="invalid-feedback">Por favor ingresa un correo válido.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono" name="telefono" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                        <div class="invalid-feedback">Por favor escribe un mensaje.</div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
+                </form>
+            </div>
+
+            <!-- Información de contacto -->
+            <div class="col-md-6 fade-in">
+                <h3 class="mb-4">Información de contacto</h3>
+                <p><strong>Teléfono:</strong> +593 93 994 5724</p>
+                <p><strong>Correo:</strong> soporte@intercom.com</p>
+                <p><strong>Dirección:</strong> Av. Principal y Calle Secundaria, Quito, Ecuador</p>
+                <p><strong>Horario:</strong> Lunes a Viernes de 8:00 a 18:00</p>
+
+                <!-- Mapa -->
+                <div class="mt-4">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.7331683616601!2d-78.46783842642193!3d-0.18065363297208802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a109bc4fdfd%3A0x7f7e49077196f007!2sQuito!5e0!3m2!1ses-419!2sec!4v1718641540889"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOTÓN FLOTA WhatsApp -->
+    <a href="https://wa.me/593939945724" target="_blank" id="whatsapp-btn" aria-label="WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="30px" height="30px">
+            <path d="M20.52 3.48A11.917 11.917 0 0012 0C5.373 0 0 5.373 0 12c0 2.11.553 4.151 1.6 5.942L0 24l6.245-1.585A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12 0-3.22-1.255-6.243-3.48-8.52zm-8.666 16.634a9.535 9.535 0 01-5.01-1.4l-.36-.22-3.703.942.99-3.608-.233-.366a9.525 9.525 0 011.372-13.61 9.46 9.46 0 017.193-2.51c2.53 0 4.9.99 6.688 2.778a9.476 9.476 0 012.78 6.7 9.53 9.53 0 01-9.55 9.488zm5.245-7.084l-1.345-.67a.567.567 0 00-.53.08l-.918.75a.708.708 0 01-.69.09c-.497-.2-1.508-.555-2.87-1.74a11.665 11.665 0 01-2.16-2.68.652.652 0 01-.07-.6l.75-1.13a.586.586 0 00.06-.58l-.668-1.338a.47.47 0 00-.523-.247c-.174 0-.346.01-.514.015a.583.583 0 00-.574.38c-.5 1.4.376 3.37 1.97 5.09 1.33 1.42 2.754 2.32 3.8 2.79 1.24.56 2.2.38 2.47.33a.58.58 0 00.45-.33l.84-1.35a.57.57 0 00-.15-.75z" />
+        </svg>
+    </a>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">&copy; 2025 Mi Empresa - Todos los derechos reservados</p>
+    </footer>
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS para animación fade-in -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const faders = document.querySelectorAll(".fade-in");
+            const appearOptions = {
+                threshold: 0.2,
+                rootMargin: "0px 0px -50px 0px",
+            };
+
+            const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) return;
+                    entry.target.classList.add("visible");
+                    appearOnScroll.unobserve(entry.target);
+                });
+            }, appearOptions);
+
+            faders.forEach((fader) => {
+                appearOnScroll.observe(fader);
+            });
+        });
+    </script>
+
+    <!-- Validación simple del formulario -->
+    <script>
+        (() => {
+            'use strict';
+
+            const form = document.getElementById('contactForm');
+
+            form.addEventListener('submit', function (event) {
+                // Verifica validez
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            });
+        })();
+    </script>
+</body>
+</html>
